@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010122635706}
   - 212: {fileID: 212000012178633746}
-  - 65: {fileID: 65000014276103676}
+  - 61: {fileID: 61000014258157630}
   m_Layer: 8
   m_Name: FloatingPlatform1
   m_TagString: Untagged
@@ -41,18 +41,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!65 &65000014276103676
-BoxCollider:
+--- !u!61 &61000014258157630
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011142773938}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 3.32, y: 0.54, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.32, y: 0.54}
 --- !u!212 &212000012178633746
 SpriteRenderer:
   m_ObjectHideFlags: 1
