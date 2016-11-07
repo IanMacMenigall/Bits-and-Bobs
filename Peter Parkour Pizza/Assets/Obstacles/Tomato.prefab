@@ -21,6 +21,7 @@ GameObject:
   - 4: {fileID: 4000010870410574}
   - 212: {fileID: 212000012796497158}
   - 58: {fileID: 58000013536474580}
+  - 114: {fileID: 114000010958698234}
   m_Layer: 0
   m_Name: Tomato
   m_TagString: Untagged
@@ -50,11 +51,22 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.64
+--- !u!114 &114000010958698234
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010905203992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 708e7a0f00f06eb46aef1cc62a7f1856, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212000012796497158
 SpriteRenderer:
   m_ObjectHideFlags: 1
