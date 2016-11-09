@@ -36,6 +36,14 @@ public class MainMenu : MonoBehaviour {
 
 	}
 
+	public void toMain() // this function will be used on the 'Play' button
+
+	{
+		// calls the 'MainLevel' scene
+		SceneManager.LoadScene("MainMenu");
+
+	}
+
 	public void StartLevel () // this function will be used on the 'Play' button
 
 	{
