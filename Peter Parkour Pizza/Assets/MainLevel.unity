@@ -362,7 +362,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 373567270}
   m_UseAutoMass: 1
   m_Mass: 4.0828137
-  m_LinearDrag: 0
+  m_LinearDrag: 0.5
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_IsKinematic: 0
@@ -627,7 +627,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 9.879621
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1450,11 +1450,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000010122635706, guid: 8e360c963aa76ac4abaa2e8953f1e36f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -33.65
+      value: -17.82
       objectReference: {fileID: 0}
     - target: {fileID: 4000010122635706, guid: 8e360c963aa76ac4abaa2e8953f1e36f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.0500002
+      value: 4.64
       objectReference: {fileID: 0}
     - target: {fileID: 4000010122635706, guid: 8e360c963aa76ac4abaa2e8953f1e36f, type: 2}
       propertyPath: m_LocalPosition.z
