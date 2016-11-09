@@ -18,36 +18,36 @@ public class MainMenu : MonoBehaviour {
 
 	}
 
-	public void QuitPress() //this function will be used on our Quit button
+	public void QuitPress() // this function will be used on the Quit button
 
 	{
-		quitConfirm.enabled = true; //enable the Quit menu when we click the Quit button
-		startGametxt.enabled = false; //prevent these buttons from being clicked
+		quitConfirm.enabled = true;     // enable the Quit menu when the 'Quit' button is clicked
+		startGametxt.enabled = false;   // prevent these buttons from being clicked
 		quitGametxt.enabled = false;
 
 	}
 
-	public void NoPress() //this function will be used for our "NO" button in our Quit Menu
+	public void NoPress()   // this function will be used for the 'NO' button in the Quit Menu
 
 	{
-		quitConfirm.enabled = false; //we'll disable the quit menu, meaning it won't be visible anymore
-		startGametxt.enabled = true; //enable the Play and Exit buttons again so they can be clicked
+		quitConfirm.enabled = false;    // Disable the Quit menu, meaning it won't be visible anymore
+		startGametxt.enabled = true;    // Enable the 'Play' and 'Exit' buttons again so they can be clicked
 		quitGametxt.enabled = true;
 
 	}
 
-	public void StartLevel () //this function will be used on our Play button
+	public void StartLevel () // this function will be used on the 'Play' button
 
 	{
-		//calls the Main level scene
+		// calls the 'MainLevel' scene
 		SceneManager.LoadScene("MainLevel");
 
 	}
 
-	public void ExitGame () //This function will be used on our "Yes" button in our Quit menu
+	public void ExitGame () // this function will be used on the "Yes" button in our Quit menu
 
 	{
-		Application.Quit(); //this will quit our game. Note this will only work after building the game
+		Application.Quit(); // Quit the game. Note that this will only work after building the game
 
 	}
 
