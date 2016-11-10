@@ -8,9 +8,9 @@ TagManager:
   - Score
   - tomato
   - mushroom
-  - apple
-  - box
-  - can
+  - rubbish
+  - pizzaCutter
+  - flames
   layers:
   - Default
   - TransparentFX

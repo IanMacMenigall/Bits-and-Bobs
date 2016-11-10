@@ -29,20 +29,20 @@ public class Health : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) 
 	{
         //Check the provided Collider2D parameter other to see if it is tagged "PickUp", if it is...
-        if (other.gameObject.CompareTag("can"))
+        if (other.gameObject.CompareTag("rubbish"))
         {
 
             //... then set the other object we just collided with to inactive.
             //other.gameObject.SetActive(false);
 
             //Add one to the current value of our count variable.
-            count = count - 100;
+            count = count - 10;
 
             //Update the currently displayed count by calling the SetCountText function.
             SetCountText();
         }
 
-        else if (other.gameObject.CompareTag("apple"))
+        else if (other.gameObject.CompareTag("can"))
         {
             count = count - 120;
             SetCountText();
