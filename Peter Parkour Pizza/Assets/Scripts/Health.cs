@@ -4,8 +4,8 @@ using System.Collections;
 //Adding this allows us to access members of the UI namespace including Text.
 using UnityEngine.UI;
 
-public class Scoring : MonoBehaviour {
-
+public class Health : MonoBehaviour {
+        
 	
 	public Text score;          //Store a reference to the UI Text component which will display the number of pickups collected.
 	
@@ -17,7 +17,7 @@ public class Scoring : MonoBehaviour {
 	void Start()
 	{
 		//Initialize count to zero.
-		count = 0;
+		count = 100;
 
 		//Call our SetCountText function which will update the text with the current value for count.
 		SetCountText ();
@@ -29,27 +29,27 @@ public class Scoring : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) 
 	{
         //Check the provided Collider2D parameter other to see if it is tagged "PickUp", if it is...
-        if (other.gameObject.CompareTag("pepperoni"))
+        if (other.gameObject.CompareTag("can"))
         {
 
             //... then set the other object we just collided with to inactive.
             //other.gameObject.SetActive(false);
 
             //Add one to the current value of our count variable.
-            count = count + 100;
+            count = count - 100;
 
             //Update the currently displayed count by calling the SetCountText function.
             SetCountText();
         }
 
-        else if (other.gameObject.CompareTag("tomato"))
+        else if (other.gameObject.CompareTag("apple"))
         {
-            count = count + 120;
+            count = count - 120;
             SetCountText();
         }
-        else if (other.gameObject.CompareTag("mushroom"))
+        else if (other.gameObject.CompareTag("box"))
         {
-            count = count + 150;
+            count = count - 150;
             SetCountText();
         }
 
@@ -60,7 +60,7 @@ public class Scoring : MonoBehaviour {
 	void SetCountText()
 	{
 		//Set the text property of our our countText object to "Count: " followed by the number stored in our count variable.
-		score.text = "Score: " + count.ToString ();
+		score.text = "Health: " + count.ToString ();
 
 
 	}

@@ -4,7 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Player
+  - pepperoni
+  - Score
+  - tomato
+  - mushroom
+  - apple
+  - box
+  - can
   layers:
   - Default
   - TransparentFX
