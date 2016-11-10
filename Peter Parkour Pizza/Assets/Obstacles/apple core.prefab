@@ -24,7 +24,7 @@ GameObject:
   - 58: {fileID: 58000012865268320}
   m_Layer: 0
   m_Name: apple core
-  m_TagString: Untagged
+  m_TagString: apple
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
