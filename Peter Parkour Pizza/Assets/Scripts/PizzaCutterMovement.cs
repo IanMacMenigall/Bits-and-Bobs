@@ -3,47 +3,37 @@ using System.Collections;
 
 public class PizzaCutterMovement : MonoBehaviour {
 
-    [HideInInspector]
-    public float facing = -1;
-    [HideInInspector]
-    public bool jump = false;
-
-    public float jumpForce = 500f;
-    public Transform groundCheck;
-
-    private bool grounded = false;
-    private Animator anim;
-    private Rigidbody2D rb2d;
+    public GameObject platform;
+    public float moveSpeed;
+    public Transform currentPoint;
+    public Transform[] points;
+    public int pointSelection;
 
     // Use this for initialization
     void Start()
     {
-        anim = GetComponent<Animator>();
-        rb2d = GetComponent<Rigidbody2D>();
+
+        currentPoint = points[pointSelection];
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
 
-        if (grounded)
+        platform.transform.position = Vector3.MoveTowards(platform.transform.position, currentPoint.position, Time.deltaTime * moveSpeed);
+
+
+        if (platform.transform.position == currentPoint.position)
         {
-            jump = true;
+            pointSelection++;
+
+            if (pointSelection == points.Length)
+            {
+                pointSelection = 0;
+            }
+
+            currentPoint = points[pointSelection];
         }
 
     }
-
-    void FixedUpdate()
-    {
-
-        if (jump)
-        {
-            anim.SetTrigger("Jump");
-            rb2d.AddForce(new Vector2(-5f, jumpForce));
-            jump = false;
-        }
-
-    }
-
-}
