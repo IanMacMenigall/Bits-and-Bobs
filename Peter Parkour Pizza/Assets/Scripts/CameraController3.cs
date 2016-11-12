@@ -42,17 +42,7 @@ public class CameraController3 : MonoBehaviour
 
 
     void Update()
-    {
-        float clampedX = Mathf.Clamp(transform.position.x, minBounds.x + halfWidth, maxBounds.x - halfWidth);
-        float clampedY = Mathf.Clamp(transform.position.y, minBounds.y + halfHeight, maxBounds.x - halfHeight);
-        transform.position = new Vector3(clampedX, clampedY, transform.position.z);
-
-    }
-
-
-    void LateUpdate()
-    {
-       
+    {       
         focusArea.Update(target.GetComponent<Collider2D>().bounds);
 
         Vector2 focusPosition = focusArea.centre + Vector2.up * verticalOffset;
@@ -75,11 +65,16 @@ public class CameraController3 : MonoBehaviour
         }
 
 
+
         currentLookAheadX = Mathf.SmoothDamp(currentLookAheadX, targetLookAheadX, ref smoothLookVelocityX, lookSmoothTimeX);
 
         focusPosition.y = Mathf.SmoothDamp(transform.position.y, focusPosition.y, ref smoothVelocityY, verticalSmoothTime);
         focusPosition += Vector2.right * currentLookAheadX;
         transform.position = (Vector3)focusPosition + Vector3.forward * -10;
+
+        float clampedX = Mathf.Clamp(transform.position.x, minBounds.x + halfWidth, maxBounds.x - halfWidth);
+        float clampedY = Mathf.Clamp(transform.position.y, minBounds.y + halfHeight, maxBounds.x - halfHeight);
+        transform.position = new Vector3(clampedX, clampedY, transform.position.z);
     }
 
     void OnDrawGizmos()
