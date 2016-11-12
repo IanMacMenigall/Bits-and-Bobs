@@ -165,7 +165,7 @@ MonoBehaviour:
   jump: 0
   moveForce: 200
   maxSpeed: 2
-  jumpForce: 200
+  jumpForce: 50
   groundCheck: {fileID: 4000013918896350}
   wallCheck: {fileID: 4000013154244190}
 --- !u!212 &212000012260783046
