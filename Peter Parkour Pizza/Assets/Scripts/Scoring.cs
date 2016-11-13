@@ -53,7 +53,16 @@ public class Scoring : MonoBehaviour {
             count = count + 150;
             SetCountText();
         }
-
+        else if(other.gameObject.CompareTag("EnemyCabbage"))
+        {
+            count = count - 200;
+            SetCountText();
+        }
+        else if(other.gameObject.CompareTag("EnemyPineapple"))
+        {
+            count = count - 300;
+            SetCountText();
+        }
 
     }
 
@@ -83,7 +92,6 @@ public class Scoring : MonoBehaviour {
             count = count - 0.15;
             SetCountText();
         }
-
 
     }
 
