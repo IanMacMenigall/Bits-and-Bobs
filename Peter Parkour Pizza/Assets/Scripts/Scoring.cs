@@ -11,7 +11,7 @@ public class Scoring : MonoBehaviour {
 	
 
 	
-	public static int count; 
+	public static double count; 
     //Integer to store the number of pickups collected so far.
 
 	// Use this for initialization
@@ -57,11 +57,41 @@ public class Scoring : MonoBehaviour {
 
     }
 
-	//This function updates the text displaying the number of objects we've collected and displays our victory message if we've collected all of them.
-	void SetCountText()
+    void OnTriggerStay2D(Collider2D other)
+    {
+        //Check the provided Collider2D parameter other to see if it is tagged "PickUp", if it is...
+        if (other.gameObject.CompareTag("rubbish"))
+        {
+
+            //... then set the other object we just collided with to inactive.
+            //other.gameObject.SetActive(false);
+
+            //Add one to the current value of our count variable.
+            count = count - 0.06;
+
+            //Update the currently displayed count by calling the SetCountText function.
+            SetCountText();
+        }
+
+        else if (other.gameObject.CompareTag("pizzaCutter"))
+        {
+            count = count - 0.12;
+            SetCountText();
+        }
+        else if (other.gameObject.CompareTag("flames"))
+        {
+            count = count - 0.15;
+            SetCountText();
+        }
+
+
+    }
+
+    //This function updates the text displaying the number of objects we've collected and displays our victory message if we've collected all of them.
+    void SetCountText()
 	{
 		//Set the text property of our our countText object to "Count: " followed by the number stored in our count variable.
-		score.text = "Score: " + count.ToString ();
+		score.text = "Edibility: " + count.ToString ("F0");
 
 
 	}
