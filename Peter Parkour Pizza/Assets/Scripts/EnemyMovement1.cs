@@ -30,27 +30,30 @@ public class EnemyMovement1 : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
-		wall = Physics2D.Linecast(transform.position, wallCheck.position, 1 << LayerMask.NameToLayer("Ground"));
-        friend = Physics2D.Linecast(wallCheck.position, wallCheck.position, 1 << LayerMask.NameToLayer("Enemy"));
+        if (GetComponent<Renderer>().isVisible)
+        {
+            grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
+            wall = Physics2D.Linecast(transform.position, wallCheck.position, 1 << LayerMask.NameToLayer("Ground"));
+            friend = Physics2D.Linecast(wallCheck.position, wallCheck.position, 1 << LayerMask.NameToLayer("Enemy"));
 
-		if (grounded)
-		{
-			jump = true;
-		}
+            if (grounded)
+            {
+                jump = true;
+            }
 
-		if (wall || friend)
-		{
-			Flip();
-		}
+            if (wall || friend)
+            {
+                Flip();
+            }
+        }
 	}
 
 	void FixedUpdate()
 	{
-		anim.SetFloat("Speed", Mathf.Abs(facing));
-
-        if (GetComponent<Renderer>().isVisible)
+        if(GetComponent<Renderer>().isVisible)
         {
+            anim.SetFloat("Speed", Mathf.Abs(facing));
+
             if (facing * rb2d.velocity.x < maxSpeed)
                 rb2d.AddForce(Vector2.right * facing * moveForce);
             if (Mathf.Abs(rb2d.velocity.x) > maxSpeed)
