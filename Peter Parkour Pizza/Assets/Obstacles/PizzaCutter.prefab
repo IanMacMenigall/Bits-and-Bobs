@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012494540464}
   - 114: {fileID: 114000013310459080}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PizzaCutter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ GameObject:
   - 4: {fileID: 4000013030315022}
   - 212: {fileID: 212000013597251348}
   - 58: {fileID: 58000013557809212}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PizzaCutterObject
   m_TagString: pizzaCutter
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000010017726082}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PizzaCutter1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
