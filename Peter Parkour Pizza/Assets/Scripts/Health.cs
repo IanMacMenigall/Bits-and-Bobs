@@ -13,7 +13,7 @@ public class Health : MonoBehaviour
 
 
 
-    private int count;              //Integer to store the number of pickups collected so far.
+    private double count;              //Integer to store the number of pickups collected so far.
 
     // Use this for initialization
     void Start()
@@ -28,7 +28,8 @@ public class Health : MonoBehaviour
 
 
     //OnTriggerEnter2D is called whenever this object overlaps with a trigger collider.
-    void OnTriggerEnter2D(Collider2D other)
+    //void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
         //Check the provided Collider2D parameter other to see if it is tagged "PickUp", if it is...
         if (other.gameObject.CompareTag("rubbish"))
@@ -38,7 +39,7 @@ public class Health : MonoBehaviour
             //other.gameObject.SetActive(false);
 
             //Add one to the current value of our count variable.
-            count = count - 10;
+            count = count - 0.06;
 
             //Update the currently displayed count by calling the SetCountText function.
             SetCountText();
@@ -46,12 +47,12 @@ public class Health : MonoBehaviour
 
         else if (other.gameObject.CompareTag("pizzaCutter"))
         {
-            count = count - 12;
+            count = count - 0.12;
             SetCountText();
         }
         else if (other.gameObject.CompareTag("flames"))
         {
-            count = count - 15;
+            count = count - 0.15;
             SetCountText();
         }
 
@@ -62,7 +63,8 @@ public class Health : MonoBehaviour
     void SetCountText()
     {
         //Set the text property of our our countText object to "Count: " followed by the number stored in our count variable.
-        health.text = "Health: " + count.ToString();
+        
+        health.text = "Health: " + count.ToString("F0");
 
 
     }
