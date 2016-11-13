@@ -333,6 +333,7 @@ GameObject:
   - 92: {fileID: 872010080}
   - 124: {fileID: 872010079}
   - 81: {fileID: 872010078}
+  - 114: {fileID: 872010083}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -408,6 +409,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &872010083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 872010077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67d15d9eaa6f86c4281aecc8c416acf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 925177444}
 --- !u!1 &899824040
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,8 +527,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 47.000004, y: 50}
-  m_SizeDelta: {x: 148, y: 73}
+  m_AnchoredPosition: {x: 152.1, y: 50}
+  m_SizeDelta: {x: 358.2, y: 73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &925177444
 MonoBehaviour:
@@ -543,7 +556,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 300
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
