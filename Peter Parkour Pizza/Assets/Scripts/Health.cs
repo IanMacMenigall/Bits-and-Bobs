@@ -42,14 +42,14 @@ public class Health : MonoBehaviour {
             SetCountText();
         }
 
-        else if (other.gameObject.CompareTag("can"))
+        else if (other.gameObject.CompareTag("pizzaCutter"))
         {
-            count = count - 120;
+            count = count - 12;
             SetCountText();
         }
-        else if (other.gameObject.CompareTag("box"))
+        else if (other.gameObject.CompareTag("flames"))
         {
-            count = count - 150;
+            count = count - 15;
             SetCountText();
         }
 

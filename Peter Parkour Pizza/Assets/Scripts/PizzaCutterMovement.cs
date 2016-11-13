@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PizzaCutterMovement : MonoBehaviour {
 
-    public GameObject platform;
+    public GameObject cutter;
     public float moveSpeed;
     public Transform currentPoint;
     public Transform[] points;
@@ -21,10 +21,10 @@ public class PizzaCutterMovement : MonoBehaviour {
     void Update()
     {
 
-        platform.transform.position = Vector3.MoveTowards(platform.transform.position, currentPoint.position, Time.deltaTime * moveSpeed);
+        cutter.transform.position = Vector3.MoveTowards(cutter.transform.position, currentPoint.position, Time.deltaTime * moveSpeed);
 
 
-        if (platform.transform.position == currentPoint.position)
+        if (cutter.transform.position == currentPoint.position)
         {
             pointSelection++;
 
