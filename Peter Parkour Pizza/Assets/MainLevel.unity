@@ -1412,9 +1412,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facingRight: 1
   jump: 0
-  moveForce: 365
-  maxSpeed: 5
-  jumpForce: 2000
+  moveForce: 200
+  maxSpeed: 8
+  jumpForce: 2750
   groundCheck: {fileID: 1724856996}
   rb2d: {fileID: 0}
 --- !u!50 &373567274
@@ -1428,7 +1428,7 @@ Rigidbody2D:
   m_Mass: 3.1415927
   m_LinearDrag: 1
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1793,11 +1793,6 @@ Prefab:
     - target: {fileID: 4000010422609258, guid: 22efdde38f95e5e4986d4d763cfb9eef, type: 2}
       propertyPath: m_RootOrder
       value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 61000012822467162, guid: 22efdde38f95e5e4986d4d763cfb9eef,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1000010714948970, guid: 22efdde38f95e5e4986d4d763cfb9eef, type: 2}
       propertyPath: m_TagString
@@ -3174,11 +3169,6 @@ Prefab:
     - target: {fileID: 4000010422609258, guid: 22efdde38f95e5e4986d4d763cfb9eef, type: 2}
       propertyPath: m_RootOrder
       value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 61000012822467162, guid: 22efdde38f95e5e4986d4d763cfb9eef,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1000010714948970, guid: 22efdde38f95e5e4986d4d763cfb9eef, type: 2}
       propertyPath: m_TagString
@@ -7082,11 +7072,6 @@ Prefab:
     - target: {fileID: 4000010422609258, guid: 22efdde38f95e5e4986d4d763cfb9eef, type: 2}
       propertyPath: m_RootOrder
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 61000012822467162, guid: 22efdde38f95e5e4986d4d763cfb9eef,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1000010714948970, guid: 22efdde38f95e5e4986d4d763cfb9eef, type: 2}
       propertyPath: m_TagString

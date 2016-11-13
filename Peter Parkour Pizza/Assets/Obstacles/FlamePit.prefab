@@ -24,7 +24,7 @@ GameObject:
   - 61: {fileID: 61000012822467162}
   m_Layer: 0
   m_Name: FlamePit
-  m_TagString: Untagged
+  m_TagString: flames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

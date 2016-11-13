@@ -22,7 +22,7 @@ GameObject:
   - 114: {fileID: 114000013310459080}
   m_Layer: 0
   m_Name: PizzaCutter
-  m_TagString: Untagged
+  m_TagString: pizzaCutter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
