@@ -12,6 +12,10 @@ TagManager:
   - pizzaCutter
   - flames
   - MovingPlatform
+  - box
+  - apple
+  - can
+  - LevelEnd
   layers:
   - Default
   - TransparentFX

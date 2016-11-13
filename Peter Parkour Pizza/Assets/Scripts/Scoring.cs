@@ -11,7 +11,8 @@ public class Scoring : MonoBehaviour {
 	
 
 	
-	private int count;              //Integer to store the number of pickups collected so far.
+	public static int count; 
+    //Integer to store the number of pickups collected so far.
 
 	// Use this for initialization
 	void Start()
