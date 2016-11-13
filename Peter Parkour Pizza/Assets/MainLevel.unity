@@ -194,6 +194,11 @@ Transform:
   - {fileID: 78126981}
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!4 &190736809 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000013934446604, guid: adb01acd51cc9f84baab21c2f604807c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1389467369}
 --- !u!1 &217058749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,52 +1458,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e360c963aa76ac4abaa2e8953f1e36f, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &923215155
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1059368979}
-    m_Modifications:
-    - target: {fileID: 4000012297538978, guid: c36b4d515cc9600428b63a14747abdd5, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 89.20723
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012297538978, guid: c36b4d515cc9600428b63a14747abdd5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 22.101002
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012297538978, guid: c36b4d515cc9600428b63a14747abdd5, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012297538978, guid: c36b4d515cc9600428b63a14747abdd5, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012297538978, guid: c36b4d515cc9600428b63a14747abdd5, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012297538978, guid: c36b4d515cc9600428b63a14747abdd5, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012297538978, guid: c36b4d515cc9600428b63a14747abdd5, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012297538978, guid: c36b4d515cc9600428b63a14747abdd5, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000010417489328, guid: c36b4d515cc9600428b63a14747abdd5, type: 2}
-      propertyPath: m_Name
-      value: Pizza cutter side on
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: c36b4d515cc9600428b63a14747abdd5, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &934760646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1653,7 +1612,7 @@ Transform:
   - {fileID: 1746998296}
   - {fileID: 8647951}
   - {fileID: 549021843}
-  - {fileID: 1862477241}
+  - {fileID: 190736809}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &1129011203 stripped
@@ -1790,6 +1749,52 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2a193bfcb85beeb43be84850c70e8fdc, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1389467369
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1059368979}
+    m_Modifications:
+    - target: {fileID: 4000013934446604, guid: adb01acd51cc9f84baab21c2f604807c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 90.10535
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013934446604, guid: adb01acd51cc9f84baab21c2f604807c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 20.161001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013934446604, guid: adb01acd51cc9f84baab21c2f604807c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013934446604, guid: adb01acd51cc9f84baab21c2f604807c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013934446604, guid: adb01acd51cc9f84baab21c2f604807c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013934446604, guid: adb01acd51cc9f84baab21c2f604807c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013934446604, guid: adb01acd51cc9f84baab21c2f604807c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013934446604, guid: adb01acd51cc9f84baab21c2f604807c, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010101048892, guid: adb01acd51cc9f84baab21c2f604807c, type: 2}
+      propertyPath: m_Name
+      value: PizzaCutter
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: adb01acd51cc9f84baab21c2f604807c, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1406548263
 GameObject:
@@ -2295,6 +2300,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010714948970, guid: 22efdde38f95e5e4986d4d763cfb9eef, type: 2}
+      propertyPath: m_TagString
+      value: flames
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22efdde38f95e5e4986d4d763cfb9eef, type: 2}
   m_IsPrefabParent: 0
@@ -2454,11 +2463,6 @@ Transform:
   - {fileID: 800449314}
   m_Father: {fileID: 0}
   m_RootOrder: 1
---- !u!4 &1862477241 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4000011020370308, guid: c36b4d515cc9600428b63a14747abdd5,
-    type: 2}
-  m_PrefabInternal: {fileID: 923215155}
 --- !u!4 &1885135662 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000010421737624, guid: 345d6d6ab8435fb4585b8c1b12e1de8b,
