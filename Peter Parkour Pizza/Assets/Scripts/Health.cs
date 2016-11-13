@@ -4,30 +4,31 @@ using System.Collections;
 //Adding this allows us to access members of the UI namespace including Text.
 using UnityEngine.UI;
 
-public class Health : MonoBehaviour {
-        
-	
-	public Text score;          //Store a reference to the UI Text component which will display the number of pickups collected.
-	
+public class Health : MonoBehaviour
+{
 
-	
-	private int count;              //Integer to store the number of pickups collected so far.
 
-	// Use this for initialization
-	void Start()
-	{
-		//Initialize count to zero.
-		count = 100;
-
-		//Call our SetCountText function which will update the text with the current value for count.
-		SetCountText ();
-	}
+    public Text score;          //Store a reference to the UI Text component which will display the number of pickups collected.
 
 
 
-	//OnTriggerEnter2D is called whenever this object overlaps with a trigger collider.
-	void OnTriggerEnter2D(Collider2D other) 
-	{
+    private int count;              //Integer to store the number of pickups collected so far.
+
+    // Use this for initialization
+    void Start()
+    {
+        //Initialize count to zero.
+        count = 100;
+
+        //Call our SetCountText function which will update the text with the current value for count.
+        SetCountText();
+    }
+
+
+
+    //OnTriggerEnter2D is called whenever this object overlaps with a trigger collider.
+    void OnTriggerEnter2D(Collider2D other)
+    {
         //Check the provided Collider2D parameter other to see if it is tagged "PickUp", if it is...
         if (other.gameObject.CompareTag("rubbish"))
         {
@@ -56,12 +57,21 @@ public class Health : MonoBehaviour {
 
     }
 
-	//This function updates the text displaying the number of objects we've collected and displays our victory message if we've collected all of them.
-	void SetCountText()
-	{
-		//Set the text property of our our countText object to "Count: " followed by the number stored in our count variable.
-		score.text = "Health: " + count.ToString ();
+    //This function updates the text displaying the number of objects we've collected and displays our victory message if we've collected all of them.
+    void SetCountText()
+    {
+        //Set the text property of our our countText object to "Count: " followed by the number stored in our count variable.
+        score.text = "Health: " + count.ToString();
 
 
-	}
+    }
+    void Update()
+    {
+
+        if (count <= 0)
+        {
+            Application.LoadLevel("LoseMenu");
+
+        }
+    }
 }
