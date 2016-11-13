@@ -4,7 +4,20 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Player
+  - pepperoni
+  - Score
+  - tomato
+  - mushroom
+  - rubbish
+  - pizzaCutter
+  - flames
+  - MovingPlatform
+  - box
+  - apple
+  - can
+  - LevelEnd
+  - EnemyCabbage
+  - EnemyPineapple
   layers:
   - Default
   - TransparentFX
@@ -16,7 +29,7 @@ TagManager:
   - 
   - Ground
   - Player
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -39,6 +52,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1721071635
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
