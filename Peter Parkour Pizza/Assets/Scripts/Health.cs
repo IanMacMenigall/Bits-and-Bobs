@@ -3,12 +3,13 @@ using System.Collections;
 
 //Adding this allows us to access members of the UI namespace including Text.
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
 
 
-    public Text score;          //Store a reference to the UI Text component which will display the number of pickups collected.
+    public Text health;          //Store a reference to the UI Text component which will display the number of pickups collected.
 
 
 
@@ -61,7 +62,7 @@ public class Health : MonoBehaviour
     void SetCountText()
     {
         //Set the text property of our our countText object to "Count: " followed by the number stored in our count variable.
-        score.text = "Health: " + count.ToString();
+        health.text = "Health: " + count.ToString();
 
 
     }
@@ -70,7 +71,7 @@ public class Health : MonoBehaviour
 
         if (count <= 0)
         {
-            Application.LoadLevel("LoseMenu");
+            SceneManager.LoadScene("LoseMenu");
 
         }
     }
