@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DeliveryTimer : MonoBehaviour {
@@ -17,7 +17,7 @@ public class DeliveryTimer : MonoBehaviour {
 
         if (timer <= 0)
         {
-            Application.LoadLevel("LoseMenu");
+            SceneManager.LoadScene("LoseMenu");
 
         }
 
