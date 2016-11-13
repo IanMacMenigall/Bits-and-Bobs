@@ -118,7 +118,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!58 &58000011961775592
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -165,7 +165,7 @@ MonoBehaviour:
   jump: 0
   moveForce: 200
   maxSpeed: 2.5
-  jumpForce: 275
+  jumpForce: 350
   groundCheck: {fileID: 4000011791895300}
   wallCheck: {fileID: 4000013974478768}
 --- !u!212 &212000013699271634
