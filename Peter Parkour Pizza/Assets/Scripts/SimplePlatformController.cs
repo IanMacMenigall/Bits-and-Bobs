@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.ComponentModel;
 
 public class SimplePlatformController : MonoBehaviour {
     [HideInInspector]
@@ -14,7 +15,7 @@ public class SimplePlatformController : MonoBehaviour {
 
     private bool grounded = false;
     private Animator anim;
-    private Rigidbody2D rb2d;
+    public Rigidbody2D rb2d;
 
 	// Use this for initialization
 	void Awake () {
@@ -52,7 +53,6 @@ public class SimplePlatformController : MonoBehaviour {
             rb2d.AddForce(new Vector2(0f, jumpForce));
             jump = false;
         }
-           
     }
 
     void Flip()
