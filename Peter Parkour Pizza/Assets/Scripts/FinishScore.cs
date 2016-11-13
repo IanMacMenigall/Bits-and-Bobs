@@ -10,6 +10,6 @@ public class FinishScore : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        score.text = "Score: "+Scoring.count.ToString();
+        score.text = "Score: "+Scoring.count.ToString("F0");
 	}
 }

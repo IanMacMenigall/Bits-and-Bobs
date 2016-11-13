@@ -16,6 +16,8 @@ TagManager:
   - apple
   - can
   - LevelEnd
+  - EnemyCabbage
+  - EnemyPineapple
   layers:
   - Default
   - TransparentFX
