@@ -23,7 +23,7 @@ public class HealthBar : MonoBehaviour
         playerHealth = maxPlayerHealth; //PlayerPrefs.GetInt("PlayerCurrentHealth");
 
         //Call our SetplayerHealthText function which will update the text with the current value for playerHealth.
-      //  Update();
+        Update();
     }
 
 
