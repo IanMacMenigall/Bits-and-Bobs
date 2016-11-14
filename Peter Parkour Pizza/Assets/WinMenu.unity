@@ -284,7 +284,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 116, y: 121}
+  m_AnchoredPosition: {x: 116, y: 234}
   m_SizeDelta: {x: 284.4, y: 87}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &899824042
@@ -358,8 +358,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 131.49998, y: 50}
-  m_SizeDelta: {x: 317, y: 73}
+  m_AnchoredPosition: {x: 259, y: 66.075}
+  m_SizeDelta: {x: 579, y: 220.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &925177444
 MonoBehaviour:
@@ -387,13 +387,17 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 300
-    m_Alignment: 3
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Score:'
+  m_Text: 'Score:
+
+    Time Bonus:
+
+    Total:'
 --- !u!222 &925177445
 CanvasRenderer:
   m_ObjectHideFlags: 0

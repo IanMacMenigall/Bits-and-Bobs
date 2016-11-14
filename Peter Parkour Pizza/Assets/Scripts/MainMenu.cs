@@ -11,17 +11,17 @@ public class MainMenu : MonoBehaviour {
 
 	void Start(){
 
-		quitConfirm = quitConfirm.GetComponent<Canvas>();
+		//quitConfirm = quitConfirm.GetComponent<Canvas>();
 		startGametxt = startGametxt.GetComponent<Button> ();
 		quitGametxt = quitGametxt.GetComponent<Button> ();
-		quitConfirm.enabled = false;
+		//quitConfirm.enabled = false;
 
 	}
 
 	public void QuitPress() // this function will be used on the Quit button
 
 	{
-		quitConfirm.enabled = true;     // enable the Quit menu when the 'Quit' button is clicked
+		//quitConfirm.enabled = true;     // enable the Quit menu when the 'Quit' button is clicked
 		startGametxt.enabled = false;   // prevent these buttons from being clicked
 		quitGametxt.enabled = false;
 
@@ -30,7 +30,7 @@ public class MainMenu : MonoBehaviour {
 	public void NoPress()   // this function will be used for the 'NO' button in the Quit Menu
 
 	{
-		quitConfirm.enabled = false;    // Disable the Quit menu, meaning it won't be visible anymore
+		//quitConfirm.enabled = false;    // Disable the Quit menu, meaning it won't be visible anymore
 		startGametxt.enabled = true;    // Enable the 'Play' and 'Exit' buttons again so they can be clicked
 		quitGametxt.enabled = true;
 

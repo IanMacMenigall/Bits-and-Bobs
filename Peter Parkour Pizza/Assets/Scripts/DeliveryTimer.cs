@@ -8,7 +8,7 @@ public class DeliveryTimer : MonoBehaviour {
 
     public Text Timer;
 
-    public float timer = 120;
+    public static float timer = 120;
 
     void Update () {
         timer -= Time.deltaTime;
