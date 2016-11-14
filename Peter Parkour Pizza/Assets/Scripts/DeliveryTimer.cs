@@ -8,7 +8,7 @@ public class DeliveryTimer : MonoBehaviour {
 
     public Text Timer;
 
-    public float timer = 300;
+    public float timer = 120;
 
     void Update () {
         timer -= Time.deltaTime;
@@ -29,7 +29,7 @@ public class DeliveryTimer : MonoBehaviour {
         
         string minutes = Mathf.Floor(timer / 60).ToString("00");
         string seconds = (timer % 60).ToString("00");
-        Timer.text = "Delivery Time: " + minutes + ":" + seconds;
+        Timer.text = minutes + ":" + seconds;
 
     }
 }

@@ -78,4 +78,5 @@ public class SimplePlatformController : MonoBehaviour {
             transform.parent = null;
         }
     }
+
 }
