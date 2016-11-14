@@ -53,7 +53,7 @@ public class Scoring : MonoBehaviour {
             count = count + 150;
             SetCountText();
         }
-        else if(other.gameObject.CompareTag("EnemyCabbage"))
+      /*  else if(other.gameObject.CompareTag("EnemyCabbage"))
         {
             count = count - 200;
             SetCountText();
@@ -62,11 +62,11 @@ public class Scoring : MonoBehaviour {
         {
             count = count - 300;
             SetCountText();
-        }
+        }*/
 
     }
 
-    void OnTriggerStay2D(Collider2D other)
+   /* void OnTriggerStay2D(Collider2D other)
     {
         //Check the provided Collider2D parameter other to see if it is tagged "PickUp", if it is...
         if (other.gameObject.CompareTag("rubbish"))
@@ -93,13 +93,13 @@ public class Scoring : MonoBehaviour {
             SetCountText();
         }
 
-    }
+    }*/
 
     //This function updates the text displaying the number of objects we've collected and displays our victory message if we've collected all of them.
     void SetCountText()
 	{
 		//Set the text property of our our countText object to "Count: " followed by the number stored in our count variable.
-		score.text = "Edibility: " + count.ToString ("F0");
+		score.text = count.ToString ("F0");
 
 
 	}
