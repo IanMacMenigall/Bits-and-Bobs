@@ -54,12 +54,12 @@ public class HealthBar : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("flames"))
         {
-            playerHealth = playerHealth - 2;
+            playerHealth = playerHealth - 3;
             Update();
         }
         else if (other.gameObject.CompareTag("EnemyCabbage"))
         {
-            playerHealth = playerHealth - 50;
+            playerHealth = playerHealth - 100;
             Destroy(other.gameObject);
 
             Update();
@@ -67,7 +67,7 @@ public class HealthBar : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("EnemyPineapple"))
         {
-            playerHealth = playerHealth - 100;
+            playerHealth = playerHealth - 150;
             Destroy(other.gameObject);
 
             Update();
