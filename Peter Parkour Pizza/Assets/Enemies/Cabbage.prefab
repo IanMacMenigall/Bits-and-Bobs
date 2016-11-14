@@ -25,7 +25,6 @@ GameObject:
   - 50: {fileID: 50000010984606096}
   - 114: {fileID: 114000013060264138}
   - 95: {fileID: 95000011998731902}
-  - 114: {fileID: 114000011910677586}
   m_Layer: 10
   m_Name: Cabbage
   m_TagString: EnemyCabbage
@@ -166,17 +165,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114000011910677586
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010393151000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 708e7a0f00f06eb46aef1cc62a7f1856, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114000013060264138
 MonoBehaviour:
   m_ObjectHideFlags: 1
