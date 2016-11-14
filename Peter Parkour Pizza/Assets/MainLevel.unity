@@ -1682,7 +1682,6 @@ GameObject:
   - 95: {fileID: 373567276}
   - 114: {fileID: 373567277}
   - 114: {fileID: 373567279}
-  - 114: {fileID: 373567280}
   - 114: {fileID: 373567281}
   m_Layer: 9
   m_Name: MainCharacter
@@ -1827,17 +1826,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3caff215c84a28149b6c850dc66adb48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &373567280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 373567270}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 217e85b324343b7419aa564f0091f285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &373567281
@@ -2950,18 +2938,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Backgrounds:
-  - {fileID: 1612402547}
-  - {fileID: 2009299787}
-  - {fileID: 988891491}
-  - {fileID: 988891491}
-  - {fileID: 988891491}
-  - {fileID: 988891491}
-  - {fileID: 988891491}
-  - {fileID: 988891491}
-  - {fileID: 929399525}
   - {fileID: 826582508}
-  ParallaxScale: 0.003
-  ParallaxReductionFactor: 4
+  - {fileID: 929399525}
+  - {fileID: 2009299787}
+  - {fileID: 1612402547}
+  ParallaxScale: 0.25
+  ParallaxReductionFactor: 1
   Smoothing: 3
 --- !u!114 &571047517
 MonoBehaviour:
