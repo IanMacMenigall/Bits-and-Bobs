@@ -1730,7 +1730,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 373567270}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.6, y: 18.82, z: -2}
+  m_LocalPosition: {x: 25.92, y: 18.89, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -2975,7 +2975,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Timer: {fileID: 1924623172}
-  timer: 120
 --- !u!4 &582353354 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000010847444908, guid: 66cf6e01cbbcc2940b5287d28e336a73,
