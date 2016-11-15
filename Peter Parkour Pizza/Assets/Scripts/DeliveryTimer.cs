@@ -10,6 +10,11 @@ public class DeliveryTimer : MonoBehaviour {
 
     public static float timer = 120;
 
+    void Start()
+    {
+        timer = 120;
+    }
+
     void Update () {
         timer -= Time.deltaTime;
         SetCountText();
